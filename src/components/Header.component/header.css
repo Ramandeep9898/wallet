@@ -1,0 +1,19 @@
+.header-container {
+  padding: 20px 60px;
+  display: flex;
+  background-color: var(--dark-blue);
+  align-items: baseline;
+  justify-content: space-between;
+}
+.header-start-part {
+  color: var(--text-white);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+}
+.header-end-part {
+  color: aliceblue;
+  display: flex;
+  gap: 20px;
+  font-size: 30x;
+}

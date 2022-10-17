@@ -7,7 +7,7 @@ import { AiOutlineYoutube, AiOutlineSetting } from "react-icons/ai";
 export const Aside = () => {
   return (
     <>
-      <section className="aside-container">
+      <section className="aside-container margin-t30">
         <li className="aside-items">
           <ui className="aside-item">
             <div className="aside-item-logo">
