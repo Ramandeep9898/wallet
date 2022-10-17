@@ -1,0 +1,83 @@
+.aside-container {
+  background-color: var(--components-background-blue);
+  max-width: 300px;
+  border-radius: 8px;
+  text-decoration: none;
+  list-style: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.aside-items {
+  color: var(--text-white);
+  padding: 50px 40px;
+}
+.aside-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.aside-item-logo {
+  padding: 8px 10px;
+  background-color: var(--text-dark-grey);
+  border-radius: 8px;
+}
+.divider {
+  border: 1px solid var(--text-dark-grey);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.color-yellow {
+  color: var(--text-yellow);
+}
+.color-yellow-active {
+  color: var(--text-active-yellow);
+}
+
+.color-yellow-inactive {
+  color: var(--text-inactive-yellow);
+}
+
+.aside-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.wallet {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wallets {
+  min-width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.wallets-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 75px;
+}
+.outline-btn {
+  border: 2px solid var(--cta-blue);
+  border-radius: 8px;
+  padding: 12px 30px;
+  background-color: transparent;
+  color: var(--cta-blue);
+  font-weight: 600;
+}
+.btn-container {
+  text-align: center;
+}
+.support-div {
+  background-color: var(--text-inactive-yellow);
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 0 0 8px 8px;
+}
+.support-btn {
+  background-color: var(--text-inactive-yellow);
+  color: var(--text-white);
+  border: none;
+  font-size: 16px;
+}
