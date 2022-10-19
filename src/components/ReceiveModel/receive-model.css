@@ -1,0 +1,201 @@
+.model {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.model > .model-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close {
+  width: 100%;
+  text-align: end;
+  color: var(--text-white);
+  font-size: 20px;
+}
+.model-container {
+  background-color: var(--model-bg-color);
+  width: 50vw;
+  padding: 50px;
+  border-radius: 8px;
+  text-align: center;
+}
+.slider-container {
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+}
+.active-slider-border {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--text-active-yellow);
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  background-color: var(--components-background-blue);
+}
+.slider-active {
+  background: var(--text-active-yellow);
+  z-index: 1;
+}
+.inactive-slider {
+  border: 1px solid var(--text-light-grey);
+  color: var(--text-light-grey);
+  font-weight: 500;
+}
+.width {
+  width: 200px;
+  border-top: 1px solid var(--text-dark-grey);
+}
+.typograpy {
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+}
+.pad10 {
+  padding: 0 5px 0 10px;
+}
+.margin-LR10 {
+  margin: 0 5px;
+}
+.instruction-div {
+  border-radius: 8px;
+  background: var(--instruction-bg-color);
+  padding: 15px 20px 15px 20px;
+  text-align: left;
+  color: #a4a9d6;
+  justify-content: space-between;
+}
+.instruction-logo {
+  font-weight: 700;
+  font-size: 25px;
+}
+.heading {
+  text-align: left;
+  padding: 0 0 0 20px;
+  margin-top: 50px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark .checkmark-green {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background: var(--instruction-bg-color);
+}
+
+/* On mouse-over, add a grey background color */
+/* .container:hover input ~ .test {
+  /* background-color: #ccc; */
+/* color: #2196f3; */
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+  left: 9px;
+  top: 0px;
+  width: 10px;
+  height: 18px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.done-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-yellow);
+}
+.verification-section {
+  border: 1px dotted var(--text-dark-grey);
+  border-radius: 8px;
+  padding: 20px;
+  color: var(--glowing-yellow);
+  font-size: 22px;
+  font-weight: 500;
+  background-color: var(--instruction-bg-color);
+}
+.coin-address-section {
+  border-radius: 8px;
+  background-color: var(--instruction-bg-color);
+  color: var(--glowing-yellow);
+  padding: 10px 10px 10px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  align-items: center;
+}
+.copy-btn {
+  background-color: #323538;
+  border: none;
+  padding: 12px 10px;
+  border-radius: 8px;
+  color: var(--text-yellow);
+}
+.verifyed > p {
+  text-align: left;
+}
+.padL20 {
+  padding-left: 20px;
+}
+.seprate {
+  width: 200px;
+}
+
+.checkmark-success:after {
+  border: solid green !important;
+  border-width: 0 3px 3px 0 !important;
+}
