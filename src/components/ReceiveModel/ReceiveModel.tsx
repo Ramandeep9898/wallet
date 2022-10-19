@@ -1,11 +1,11 @@
 import "./receive-model.css";
 import { BsArrowRight, BsCheck2 } from "react-icons/bs";
+import { MdOutlineClose } from "react-icons/md";
 import { useState } from "react";
 import "../Aside.component/aside.css";
-import { MdOutlineClose } from "react-icons/md";
 import { Checkbox } from "./Checkbox";
 //@ts-ignore
-export const ReceiveModel = ({ modelOpen, setModelOpen }) => {
+export const ReceiveModel = ({ setModelOpen }) => {
   const [checkState, setCheckState] = useState({
     check1: false,
   });
@@ -114,7 +114,14 @@ export const ReceiveModel = ({ modelOpen, setModelOpen }) => {
                   <span className="color-yellow">
                     <BsArrowRight />
                   </span>
-                  <span>Select the Wallet On device</span>
+
+                  {check1 ? (
+                    <span className="on-click-check">
+                      Select the Wallet On device
+                    </span>
+                  ) : (
+                    <span>Select the Wallet On device</span>
+                  )}
                 </div>
                 <Checkbox
                   handleCheckbox={handleCheckbox}
@@ -127,18 +134,15 @@ export const ReceiveModel = ({ modelOpen, setModelOpen }) => {
                   <span className="color-yellow">
                     <BsArrowRight />
                   </span>
-                  <span>Select the Wallet On device</span>
+                  {check2 ? (
+                    <span className="on-click-check">
+                      Select the Coin on device
+                    </span>
+                  ) : (
+                    <span>Select the Coin on device</span>
+                  )}
                 </div>
 
-                {/* <label className="container"> */}
-                {/* <input
-                    name="check2"
-                    type="checkbox"
-                    onClick={handleCheckbox}
-                  /> */}
-
-                {/* <span className="checkmark"></span>
-                </label> */}
                 <Checkbox
                   handleCheckbox={handleCheckbox}
                   checked={check2}
@@ -150,17 +154,15 @@ export const ReceiveModel = ({ modelOpen, setModelOpen }) => {
                   <span className="color-yellow">
                     <BsArrowRight />
                   </span>
-                  <span>Select the Wallet On device</span>
+                  {check3 ? (
+                    <span className="on-click-check">
+                      Tap 1 card of any 4 Cards
+                    </span>
+                  ) : (
+                    <span>Tap 1 card of any 4 Cards</span>
+                  )}
                 </div>
 
-                {/* <label className="container">
-                  <input
-                    name="check3"
-                    type="checkbox"
-                    onClick={handleCheckbox}
-                  />
-                  <span className="checkmark"></span>
-                </label> */}
                 <Checkbox
                   handleCheckbox={handleCheckbox}
                   checked={check3}
@@ -185,25 +187,22 @@ export const ReceiveModel = ({ modelOpen, setModelOpen }) => {
                     <span className="color-yellow">
                       <BsArrowRight />
                     </span>
-                    <span>
-                      Please match the address to be shown in X1 Wallet
-                    </span>
+                    {check4 ? (
+                      <span className="on-click-check">
+                        Please match the address to be shown in X1 Wallet
+                      </span>
+                    ) : (
+                      <span>
+                        Please match the address to be shown in X1 Wallet
+                      </span>
+                    )}
                   </div>
 
-                  {/* <label className="container"> */}
-                  {/* <input
-                      type="checkbox"
-                      name="check4"
-                      onClick={handleCheckbox}
-                    /> */}
                   <Checkbox
                     handleCheckbox={handleCheckbox}
                     checked={check4}
                     name="check4"
                   />
-
-                  {/* <span className="checkmark"></span>
-                  </label> */}
                 </div>
               </>
             ) : (
@@ -223,31 +222,12 @@ export const ReceiveModel = ({ modelOpen, setModelOpen }) => {
 
               <div className="verifyed margin-t20">
                 <p className="color-cta-blue padL20">
-                  !<span className="padL20">address Verifyed</span>{" "}
+                  !<span className="padL20">address Verifyed</span>
                 </p>
                 <button className="outline-btn margin-t50">Re-verify</button>
               </div>
             </>
           )}
-
-          {/* <>
-          <div className="heading margin-t50">
-            <p className="color-light-grey">Coin Address</p>
-          </div>
-          <div className="coin-address-section margin-t20  flex flex-space-btw">
-            <div className="verification-code">
-              25BKJNKNLJL58fjkdhfk26dnfds15
-            </div>
-            <button className="copy-btn">Copy</button>
-          </div>
-
-          <div className="verifyed margin-t20">
-            <p className="color-cta-blue padL20">
-              !<span className="padL20">address Verifyed</span>{" "}
-            </p>
-            <button className="outline-btn margin-t50">Re-verify</button>
-          </div>
-        </> */}
         </section>
       </main>
     </>

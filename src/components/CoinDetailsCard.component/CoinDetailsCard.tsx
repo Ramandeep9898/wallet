@@ -41,7 +41,7 @@ export const CoinDetailsCard = ({ coinDetail }: CoinCardType) => {
             </span>
           </span>
 
-          <span>|</span>
+          <span className="part-color">|</span>
 
           <span className="color-yellow flex gap10">
             <span>
@@ -53,9 +53,7 @@ export const CoinDetailsCard = ({ coinDetail }: CoinCardType) => {
         </div>
       </section>
 
-      {modelOpen && (
-        <ReceiveModel modelOpen={modelOpen} setModelOpen={setModelOpen} />
-      )}
+      {modelOpen && <ReceiveModel setModelOpen={setModelOpen} />}
     </>
   );
 };

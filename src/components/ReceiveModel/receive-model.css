@@ -74,7 +74,8 @@
   background: var(--instruction-bg-color);
   padding: 15px 20px 15px 20px;
   text-align: left;
-  color: #a4a9d6;
+  /* color: #a4a9d6; */
+  color: var(--text-light-grey);
   justify-content: space-between;
 }
 .instruction-logo {
@@ -99,8 +100,6 @@
   -ms-user-select: none;
   user-select: none;
 }
-
-/* Hide the browser's default checkbox */
 .container input {
   position: absolute;
   opacity: 0;
@@ -108,8 +107,6 @@
   height: 0;
   width: 0;
 }
-
-/* Create a custom checkbox */
 .checkmark .checkmark-green {
   position: absolute;
   top: 0;
@@ -119,29 +116,17 @@
   background: var(--instruction-bg-color);
 }
 
-/* On mouse-over, add a grey background color */
-/* .container:hover input ~ .test {
-  /* background-color: #ccc; */
-/* color: #2196f3; */
-
-/* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #2196f3;
 }
-
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: block;
 }
-
-/* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
 }
-
-/* Style the checkmark/indicator */
 
 .container .checkmark:after {
   left: 9px;
@@ -196,6 +181,9 @@
 }
 
 .checkmark-success:after {
-  border: solid green !important;
   border-width: 0 3px 3px 0 !important;
+}
+.on-click-check {
+  color: #a4a9d6;
+  font-weight: 500;
 }
