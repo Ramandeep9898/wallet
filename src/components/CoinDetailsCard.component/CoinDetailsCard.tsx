@@ -1,9 +1,8 @@
-import { BiBitcoin } from "react-icons/bi";
 import { BsArrowDownLeft, BsArrowUpRight } from "react-icons/bs";
 import { CoinDetail } from "../../data/coinDetails";
 import { ReceiveModel } from "../ReceiveModel/ReceiveModel";
 import { useState } from "react";
-import image from "../../assets/images/bitcoin.png";
+
 type CoinCardType = {
   coinDetail: CoinDetail;
 };
@@ -15,11 +14,9 @@ export const CoinDetailsCard = ({ coinDetail }: CoinCardType) => {
       <section className="coin-detail-card flex margin-t10">
         <div className="coin-name flex gap10 w-20 flex-grow flex-align-center">
           <div className="coin-logo flex flex-align-justify-center">
-            <BiBitcoin />
-            {/* <img src={coinDetail.image} alt="" /> */}
-            {/* {coinDetail.image} */}
+            <img src={coinDetail.image} alt="" />
           </div>
-          {/* <span className="color-white">{coinDetail.coin.toUpperCase()}</span> */}
+          <span className="color-white">{coinDetail.coin.toUpperCase()}</span>
         </div>
         <div className="color-white flex-grow w-20">
           <span>{coinDetail.holding}</span>

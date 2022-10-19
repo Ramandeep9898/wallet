@@ -13,7 +13,7 @@ export const Aside = () => {
             <div className="aside-item-logo">
               <RiOpenArmLine />
             </div>
-            <div className="aside-item-typo">Portfolio</div>
+            <div className="aside-item-typo cursor">Portfolio</div>
           </ul>
           <div className="divider margin-t20"></div>
 
@@ -23,26 +23,26 @@ export const Aside = () => {
                 <BsWallet2 />
               </div>
 
-              <div className="aside-item-typo color-yellow">Wallets</div>
+              <div className="aside-item-typo color-yellow cursor">Wallets</div>
             </div>
 
             <div className="wallets-container ">
               <li className="wallets color-yellow-active margin-t10">
-                <ul className="color-yellow-active ">Wallet 1</ul>
+                <ul className="color-yellow-active cursor">Wallet 1</ul>
                 <span>
                   <MdMoreHoriz />
                 </span>
               </li>
 
               <li className="wallets color-yellow-inactive margin-t10">
-                <ul className="color-yellow-inactive ">Wallet 2</ul>
+                <ul className="color-yellow-inactive cursor">Wallet 2</ul>
                 <span>
                   <MdMoreHoriz />
                 </span>
               </li>
 
               <li className="wallets color-yellow-inactive margin-t10">
-                <ul className="color-yellow-inactive ">Wallet 3</ul>
+                <ul className="color-yellow-inactive cursor">Wallet 3</ul>
                 <span>
                   <MdMoreHoriz />
                 </span>
@@ -55,7 +55,7 @@ export const Aside = () => {
             <div className="aside-item-logo">
               <MdOutlineImportExport />
             </div>
-            <div className="aside-item-typo">Last Transaction</div>
+            <div className="aside-item-typo cursor">Last Transaction</div>
           </ul>
           <div className="divider margin-t20"></div>
 
@@ -63,22 +63,22 @@ export const Aside = () => {
             <div className="aside-item-logo">
               <AiOutlineYoutube />
             </div>
-            <div className="aside-item-typo">Tutorials</div>
+            <div className="aside-item-typo cursor">Tutorials</div>
           </ul>
           <div className="divider margin-t20"></div>
           <ul className="aside-item margin-t20">
             <div className="aside-item-logo">
               <AiOutlineSetting />
             </div>
-            <div className="aside-item-typo">Settings</div>
+            <div className="aside-item-typo cursor">Settings</div>
           </ul>
 
           <div className="btn-container margin-t30">
-            <button className="outline-btn">Make Beneficiary</button>
+            <button className="outline-btn cursor">Make Beneficiary</button>
           </div>
         </li>
         <div className="support-div">
-          <button className="support-btn">Support</button>
+          <button className="support-btn cursor">Support</button>
         </div>
       </section>
     </>

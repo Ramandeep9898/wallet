@@ -38,7 +38,7 @@ export const Home = () => {
               </div>
 
               <div className="main-add-delete-btn-section ">
-                <div className="add-coin-btn btn color-yellow flex gap10">
+                <div className="add-coin-btn btn color-yellow flex gap10 cursor">
                   <span className="color-yellow-active">
                     <AiOutlinePlus />
                   </span>{" "}
@@ -54,12 +54,23 @@ export const Home = () => {
 
             <h1 className="color-yellow fontW-500 ">Wallet 1</h1>
             <section className="coin-fliter-section flex search-btn  flex-space-btw margin-t30">
-              <div className="color-light-grey">Total coins - 7</div>
               <div className="color-light-grey">
-                Amount High-Low{" "}
-                <span className="color-yellow">
-                  <RiArrowDropDownLine />
-                </span>
+                Total coins - {coinDetailsData.length}
+              </div>
+
+              <div className="dropdown">
+                <div className="dropbtn color-light-grey">
+                  Amount High-Low{" "}
+                  <span className="color-yellow">
+                    <RiArrowDropDownLine />
+                  </span>
+                </div>
+                <div className="dropdown-content">
+                  <span>Amount High-Low</span>
+                  <span>Amount Low-High</span>
+                  <span>Amount A-Z</span>
+                  <span>Amount Z-A</span>
+                </div>
               </div>
             </section>
 
